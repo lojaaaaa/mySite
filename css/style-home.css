@@ -1,0 +1,120 @@
+.home {
+    padding-top: 40px;
+}
+.home__container {
+    display: flex;
+}
+
+.home__content {
+    padding-top: 96px;
+    padding-left: 21px;
+}
+.home__title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+.home__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+.home__buttons {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.05em; 
+}
+
+.gray {
+    background: #EBEBEB;
+    padding: 15px 35px 15px 35px;
+}
+.gray:hover {
+    background: #66D37E;
+}
+
+.home__image {
+    padding-right: 29px;
+}
+.home__img {
+    max-width: 100%;
+}
+.home__btn:not(:last-child){
+    margin-right: 10px;
+}
+
+
+/*
+----------Адаптив home--------------------
+*/
+
+@media(max-width: 1025px){
+
+    .home__container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .home__image {
+        padding-right: 0;
+
+    }
+    .home__img {
+        max-width: 100%;
+        
+    }
+    .home__content{
+        padding-top: 46px;
+        padding-left: 0;
+    }
+    .home{
+        padding-top: 0;
+    }
+    .home__buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .home__title {
+        line-height: 55px;
+        text-align: center;
+    }
+    .home__text {
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 405px){
+    .home__content{
+        padding-top: 26px;
+        padding-left: 0;
+    }
+    .home__btn{
+        padding: 15px 15px 15px 15px;
+    }
+
+}
+
+@media(max-width: 380px){
+    .home__btn{
+        font-size: 16px;
+    }
+    .home__text{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .home__title{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 295px){
+    .home__btn{
+        font-size: 12px;
+    }
+
+}

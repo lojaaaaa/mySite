@@ -1,0 +1,60 @@
+.about {
+}
+.about__container {
+
+}
+.about__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    margin-bottom: 60px;
+}
+.about__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 377px;
+}
+.about__btn {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+
+
+
+/*
+----------Адаптив about--------------------
+*/
+
+@media(max-width: 430px){
+    .about__title{
+        margin-bottom: 25px;
+    }
+    .about__text {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    
+}
+@media(max-width: 405px){
+    .about{
+        padding-top: 60px;
+    }
+}
+@media(max-width: 380px){
+    .about__text {
+        line-height: 35px;
+    }
+    .about__btn{
+        padding: 10px 15px 10px 15px;
+        font-size: 16px;
+    }
+}

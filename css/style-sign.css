@@ -1,0 +1,97 @@
+.sign {
+}
+.sign__container {
+}
+
+.sign__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sign__input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.sign__title {
+    margin-bottom: 55px;
+}
+
+.sign__login {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+.sign-input {
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Rubik';
+    font-size: 16px;
+    padding: 0px 15px;
+    background: rgba(217, 217, 217, 0.25);
+    width: 386px;
+    height: 30px;
+    border: 1px;
+    
+}
+
+.sign__password {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+
+.sign__btn {
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+
+.sign__desk {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D9D9D9;
+}
+.sign__desk a{
+    color: rgba(102, 211, 126, 1);
+}
+
+
+
+
+
+/*
+----------Адаптив sign--------------------
+*/
+
+@media(max-width: 405px){
+    .sign-input {
+        width: 300px;
+    }
+    .sign__title {
+        margin-bottom: 25px;
+    }
+    .sign{
+        padding-top: 80px;
+    }
+
+    
+}
+@media(max-width: 340px){
+    .sign{
+        padding-top: 65px;
+    }
+}
+@media(max-width: 300px){
+    .sign-input {
+        width: 200px;
+        
+    }
+}

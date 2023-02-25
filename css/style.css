@@ -1,0 +1,186 @@
+
+/*
+Обнуление стилей
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    color: black;
+    font-family: 'Rubik';
+    background-color: #FFFCFC;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+._container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+
+.header {
+    margin-bottom: 60px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 89px;
+}
+
+.header__logo {
+    color: black;
+    font-size: 32px;
+    line-height: 38px;
+    padding-left: 21px;
+}
+
+.header__menu {
+    display: flex;
+
+}
+
+.header__item:not(:last-child) {
+    margin-right: 36px;
+}
+.header__item:last-child {
+    margin-right: 30px;
+}
+
+.header__link {
+    color: #a5a5a5;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all .1s;
+}
+.header__link:hover {
+    color: #66D37E;
+}
+
+.active{
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    color: #000000;
+    background: #66D37E;
+    padding: 15px 30px 15px 30px;
+    transition: all .1s;
+}
+.btn:hover {
+    background: #EBEBEB;
+}
+.btn:active {
+    background: #EBEBEB;
+}
+
+.title{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+
+
+/*
+burger
+*/
+
+.header__burger {
+}
+.header__burger-field {
+    cursor: pointer;
+}
+.header__bar {
+    display: none;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #000000;
+
+}
+
+.header__burger-menu{
+    padding-top: 49px;
+    position: absolute;
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    background-color: #FFFCFC;
+    text-align: center;
+    left: 0;
+    right: 0;
+    transform: translateY(-300%);
+}
+.header__burger-menu--active{
+    transform: translateY(0%);
+}
+
+.header__burger-link{
+    display: block;
+    padding: 10px 0;
+    color: black;
+    font-size: 18px;
+    line-height: 19px;
+    margin-bottom: 15px;
+    transition: all .1s;
+}
+.header__burger-link:active{
+    color: #a5a5a5;
+}
+
+
+
+
+
+/*
+Адаптив шапки
+*/
+
+@media(max-width: 1025px){
+
+    .header__logo{
+        padding-left: 0px;
+    }
+    .header {
+        margin-bottom: 30px;
+    }
+
+
+}
+@media(max-width: 780px){
+    .header__menu{
+        display: none;
+    }
+    .header__bar{
+        display: block;
+    }
+    .header__burger-menu{
+        display: flex;
+    }
+}
+
+@media(max-width: 405px){
+    .header {
+        margin-bottom: 10px;
+    }
+
+}

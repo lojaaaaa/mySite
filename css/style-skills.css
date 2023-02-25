@@ -1,0 +1,89 @@
+.skills {
+    font-weight: 300;
+}
+.skills__container {
+}
+
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills__title {
+    margin-bottom: 90px;
+}
+.skills__cards {
+    margin-bottom: 55px;
+    display: flex;
+}
+.skills__card {
+    background: #EBEBEB;
+    padding: 32px 27px;
+    text-align: center;
+}
+.skills__card:not(:last-child){
+    margin-right: 122px;
+}
+.skills__card-icon {
+    margin-bottom: 18px;
+    width: 50px;
+    height: 50px;
+}
+.skills__card-title {
+    margin-bottom: 18px;
+}
+.skills__card-text {
+    max-width: 130px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.skills__text {
+    max-width: 130px;
+}
+
+
+/*
+----------Адаптив skills--------------------
+*/
+
+@media(max-width: 875px){
+    .skills__card:not(:last-child){
+        margin-right: 45px;
+    }
+}
+
+@media(max-width: 660px){
+    .skills__cards{
+        flex-direction: column;
+    }
+    .skills__card:not(:last-child){
+        margin-right: 0px;
+        margin-bottom: 35px;
+    }
+    .skills__title {
+        margin-bottom: 35px;
+    }
+    .skills__card-title {
+        font-size: 24px;
+    }
+    .skills__card-text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .skills__text{
+        display: none;
+    }
+    .skills__card {
+        padding: 16px 27px;
+    }
+
+}
+
+@media(max-width: 380px){
+    .skills__title {
+        margin-bottom: 15px;
+    }
+    .skills__card:not(:last-child){
+        margin-bottom: 15px;
+    }
+}
