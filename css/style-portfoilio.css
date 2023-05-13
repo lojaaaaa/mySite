@@ -9,38 +9,184 @@
     align-items: center;
 }
 .portfolio__title {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 
 .portfolio__slider {
     
 }
-.portfolio__images {
-    margin-bottom:27px;
+
+/* слайдер */
+
+.triangle-block{
+    max-width: 400px;
+    position: relative;
+    border: 5px solid rgb(97, 96, 96);
+    overflow: hidden;
 }
-.portfolio__image:not(:last-child){
-    margin-right: 20px;
+
+.triangle-vertical {
+    width: 800px; 
+    height: 400px; 
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
 }
-.portfolio__image{
-    max-width: 100%;
-}
-.portfolio__dots {
+.triangle-horizontally{
     display: flex;
-
-}
-.portfolio__dot {
-    background: #D9D9D9;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-.portfolio__dot:not(:last-child) {
-    margin-right: 17px;
-}
-.dot-active {
-    background: #66D37E;
+    width: 400px;
+    height: 800px; 
+    overflow: hidden;
+    position: relative;
 }
 
+.triangle-vertical>img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    clip-path: polygon(
+      0% 0%,
+      50% 100%,
+      100% 0% 
+    )
+    
+
+}
+
+.triangle-vertical img:nth-child(2) {
+    clip-path: polygon(
+      0% 100%,
+      50% 0%,
+      100% 100%
+    )
+    
+}
+
+.triangle-horizontally>img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    clip-path: polygon(
+      0% 0%,
+      100% 50%, 
+      0% 100% 
+    )
+}
+
+.triangle-horizontally img:nth-child(2) {
+    clip-path: polygon(
+      100% 0%,
+      0% 50%, 
+      100% 100% 
+    );
+}
+
+
+
+.triangle-vertical{
+    position: relative;
+}
+
+.triangle-horizontally{
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 2px;
+}
+img{
+    overflow: hidden;
+}
+
+.triangle-text{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    
+}
+.triangle-text>p:first-child{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    z-index: 12;
+    padding: 34px;
+    cursor: pointer;
+    background-color: rgba(79, 79, 79, .5);
+    border-radius: 5px;
+}
+.triangle-text>p:nth-child(2){
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    z-index: 12;
+    padding: 34px;
+    cursor: pointer;
+    background-color: rgba(79, 79, 79, .5);
+    border-radius: 5px;
+}
+
+.triangle-text>p:nth-child(3){
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    z-index: 12;
+    padding: 34px;
+    cursor: pointer;
+    background-color: rgba(79, 79, 79, .5);
+    border-radius: 5px;
+}
+
+.triangle-text>p:nth-child(4){
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    z-index: 12;
+    padding: 34px;
+    cursor: pointer;
+    background-color: rgba(79, 79, 79, .5);
+    border-radius: 5px;
+}
+.triangle-text>p:hover, .cross:hover, #left:hover, #right:hover{
+    opacity: .7;
+}
+
+.image-show{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    z-index: 50;
+}
+.hidden{
+    display: none;
+}
+.cross{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 32px;
+    color: rgb(53, 52, 52);
+    z-index: 60;
+    cursor: pointer;
+}
+#left, #right{
+    font-size: 30px;
+    color: white;
+    background-color: rgba(79, 79, 79, .5);
+    padding: 15px;
+    cursor: pointer;
+    z-index: 60;
+}
+#left{
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+#right{
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
 
 
 
